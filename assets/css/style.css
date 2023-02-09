@@ -1,0 +1,398 @@
+/* Root */
+:root {
+    --background-main: linear-gradient(to right, rgb(215, 179, 95), rgb(136, 97, 58));
+    ;
+}
+
+.bg-dark {
+    background-image: var(--background-main) !important;
+}
+
+.line {
+    background-image: linear-gradient(to right, rgb(136, 97, 58), rgb(215, 179, 95));
+    height: 2px;
+    width: 80px;
+    border-radius: 4px;
+    margin: 24px auto;
+}
+
+.clearfix {
+    width: 100%;
+    background-color: #5a5a5a;
+    height: 2px;
+}
+
+#wrapper {
+    position: relative;
+    background-color: #E6E5E5;
+}
+
+#wrapper-bg {
+    background-color: #fff;
+}
+
+#phone {
+    position: fixed;
+    z-index: 999;
+    bottom: 100px;
+    right: 20px;
+    -webkit-animation: shake .1s ease-in-out .1s infinite alternate;
+}
+
+#phone img {
+    width: 45px;
+    height: 45px;
+}
+
+#zalo {
+    position: fixed;
+    z-index: 999;
+    bottom: 40px;
+    right: 20px;
+    -webkit-animation: shake .1s ease-in-out .1s infinite alternate;
+}
+
+/* Animation Shake */
+@-webkit-keyframes shake {
+    from {
+        -webkit-transform: rotate(15deg);
+    }
+    to {
+        -webkit-transform: rotate(-15deg);
+        -webkit-transform-origin: center center;
+    }
+}
+/* Banner Top */
+.img-banner img {
+    width: 1110px;
+}
+
+/* Navigation */
+#navbar {
+    background-image: var(--background-main);
+    width: 100%;
+    height: auto;
+    padding: 0 60px;
+    box-shadow: 5px 10px 18px rgba(99, 110, 114, 0.4);
+}
+
+.menu-navbar {
+    margin: 0 30px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-li-img img {
+    margin: 20px 0;
+    width: 150px;
+    height: 40px;
+}
+
+.menu-li {
+    text-decoration: none !important;
+    line-height: 75px;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.menu-li:hover {
+    color: #ffffff;
+}
+
+/* Content */
+#content {
+    padding: 10px 0;
+    display: flex;
+}
+
+.filter-title {
+    text-align: center;
+}
+
+.filter-title h3 {
+    text-transform: uppercase;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: var(--black);
+    background-image: var(--background-main);
+}
+
+.filter-search {
+    padding-bottom: 20px;
+    background-color: #ecf0f1;
+    flex: 1;
+    height: auto;
+    border-radius: 20px;
+}
+
+/* Sim theo giá */
+.title-price {
+    padding: 10px 50px;
+}
+
+.price-search ul {
+    list-style: none;
+}
+
+.price-search ul li {
+    margin-bottom: 10px;
+}
+
+/* Sim theo loại */
+.title-brand {
+    padding: 10px 50px;
+}
+
+.brand-search ul {
+    list-style: none;
+}
+
+.brand-search ul li {
+    margin-bottom: 10px;
+}
+
+.btn-search-filter {
+	border: none;
+	width: 100%;
+	padding: 10px 10px;
+	border-radius: 20px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 500;
+	background-image: var(--background-main);
+}
+
+.btn-search-filter:hover {
+	opacity: .8;
+}
+
+/* Sim theo năm sinh */
+.title-year {
+    padding: 10px 50px;
+}
+
+.year-search {
+    display: flex;
+}
+
+.year-search ul {
+    list-style: none;
+}
+
+.year-search ul li input {
+    padding: 0 10px;
+    margin-bottom: 10px;
+    border: 1px solid rgb(84, 84, 84);
+    border-radius: 5px;
+    width: 80%;
+    height: 40px;
+}
+
+.btn-search-year {
+    line-height: 38px;
+}
+
+.btn-search-year button {
+    background-image: var(--background-main);
+    border: none;
+    border-radius: 5px;
+    width: 50px;
+}
+
+.btn-search-year button:hover {
+    opacity: .9;
+}
+
+.title-bank {
+    text-align: center;
+}
+
+.logo-bank {
+    text-align: center;
+}
+
+.logo-bank img {
+    width: 100px;
+    height: auto;
+}
+
+.desc-bank {
+    text-align: center;
+}
+
+.desc-bank span:first-child {
+    font-weight: 600;
+}
+
+.hotline-title {
+    text-align: center;
+}
+
+/* Main Proudcts */
+.main-product {
+    margin: 0 10px;
+    flex: 3;
+}
+
+.information-people {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.people-group {
+    margin: 10px 0;
+}
+
+.people-group .hotline span:first-child {
+    color: red;
+}
+
+.search-main {
+    width: 100%;
+    height: auto;
+    padding: 10px 10px;
+    border-radius: 5px;
+    background-image: var(--background-main);
+}
+
+.text-search {
+    display: flex;
+}
+
+.input-search {
+    width: 100%;
+    padding: 10px 10px;
+    border: #000;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-btn {
+    border: none;
+    width: 100px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+    background-image: linear-gradient(to right, rgb(136, 97, 58), rgb(215, 179, 95));
+}
+
+.search-btn:hover {
+    opacity: .6;
+}
+
+.guide-search {
+    margin: 10px;
+    font-weight: 600;
+}
+
+.guide-search span {
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.list-item {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product-link {
+    text-decoration: none !important;
+}
+
+.product-element {
+    display: flex;
+    margin: 20px 0;
+    padding: 5px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.product-element:hover {
+    border: 1px solid rgb(215, 179, 95);
+}
+
+.product-element:hover .logo-brand>img {
+    animation: animateIcon 1s ease;
+}
+
+@keyframes animateIcon {
+    from {
+      transform: rotateY(90deg);
+    }
+  
+    to {
+      transform: rotateY(0);
+    }
+  }
+
+.logo-brand {
+    margin-right: 10px;
+}
+
+.product-number {
+    color: #037319;
+    font-weight: 750;
+    font-size: 1.2rem;
+}
+
+.product-description p {
+    margin: 0;
+}
+
+.product-price {
+    color: #5a5a5a;
+}
+
+.pagination-product {
+    margin: 20px 0;
+}
+
+.pagination {
+    justify-content: center;
+}
+
+a.page-link {
+    color: #000;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.tab-list-products {
+    margin: 10px 0;
+}
+
+/* Header Top */
+.header-img-top {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.logo-top img {
+    width: 300px;
+    height: 60px;
+}
+
+.size-text-table {
+    font-size: 1.2rem;
+}
+
+.font-weight-table {
+    font-weight: 650;
+}
+
+/* Information */
+#information {
+    margin: 50px 0;
+}
+
+/* Footer */
+.address-map {
+    width: 260px;
+    height: auto;
+}
